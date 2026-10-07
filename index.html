@@ -1,13 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CMPM 121</title>
-    <link rel="icon" href="data:," />
-  </head>
+/**
+ * Main entry point for the CMPM 121 Section Activity
+ * Simple starter template - customize to your heart's content!
+ */
 
-  <body>
-    <script type="module" src="./src/main.ts"></script>
+console.log("🎮 CMPM 121 - Starting...");
+
+// Simple counter for demonstration
+let counter: number = 0;
+
+// Create basic HTML structurefdsdfsfds
+document.body.innerHTML = `
+  <h1>CMPM 121 Project</h1>
+  <p>Counter: <span id="counter">0</span></p>
+  <button id="increment">
+  <body style =
+    "background-color: blue;">
+    here!</button>
   </body>
-</html>
+`;
+
+// Add click handler
+const button = document.getElementById("increment")!;
+const counterElement = document.getElementById("counter")!;
+
+button.addEventListener("click", () => {
+  // This looks like to a good place to add some logic!
+  counter += 1;
+  counterElement.textContent = counter.toString();
+
+  console.log("I have these thingies:", button, counterElement, counter);
+});
